@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Играй и Учись — Демo для AI500</title>
+  <meta name="description" content="Развивающая игра для детей с ИИ: идея, команда, дорожная карта и план реализации для хакатона AI500">
+  <style>
+    :root{--accent:#376EF0;--muted:#6b7280;--bg:#f7f9fc;--card:#ffffff}
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;color:#0f172a;background:var(--bg)}
+    .container{max-width:920px;margin:28px auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#5cc7ff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    h1{margin:0;font-size:24px}
+    p.lead{color:var(--muted);margin:8px 0 18px}
+    nav a{color:var(--accent);text-decoration:none;margin-left:14px}
+    section.card{background:var(--card);border-radius:12px;padding:20px;margin:18px 0;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+    .grid{display:grid;gap:18px}
+    .two{grid-template-columns:1fr 320px}
+    .team-member{display:flex;gap:12px;align-items:center}
+    .avatar{width:64px;height:64px;border-radius:10px;background:#eef2ff;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent)}
+    dt{font-weight:600}
+    dd{margin:0 0 10px;color:var(--muted)}
+    .pill{display:inline-block;background:#eef2f7;padding:6px 10px;border-radius:999px;color:#0b4b5a;font-weight:600;font-size:13px}
+    .roadmap{display:flex;flex-direction:column;gap:10px}
+    .step{padding:12px;border-radius:8px;border:1px solid #eef2f5;background:#fff}
+    footer{margin-top:20px;text-align:center;color:var(--muted);font-size:13px}
+    @media(max-width:880px){.two{grid-template-columns:1fr}nav{display:none}}
+  </style>
+</head>
+<body>
+  <h1>Команда DopedSeek</h1>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">AI</div>
+        <div>
+          <h1>Играй и Учись — развивающая ИИ-игра для детей</h1>
+          <p class="lead">Демо-сайт для этапа 1 хакатона AI500. Коротко о проблеме, решении, команде и плане реализации.</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#problem">Проблема</a>
+        <a href="#team">Команда</a>
+        <a href="#roadmap">Дорожная карта</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="problem" class="card">
+        <h2>1. Проблема и Решение</h2>
+        <div class="grid">
+          <div>
+            <h3>Проблема</h3>
+            <p>Многие дети растут в цифровой среде, но не всегда получают персонализированное и безопасное образовательное взаимодействие. Родители и воспитатели ограничены во времени, а существующие приложения часто не адаптируются под уникальные потребности ребёнка или не мотивируют его учиться через игру.</p>
+
+            <h3>Решение</h3>
+            <p>Мы предлагаем интерактивную обучающую игру с элементами адаптивного обучения на базе ИИ: игра автоматически подстраивает задания под уровень ребёнка, использует голосовые подсказки, отслеживает прогресс и даёт рекомендации родителям. Цель — повысить мотивацию, развивать когнитивные навыки и формировать полезные привычки через игровой процесс.</p>
+          </div>
+          <aside>
+            <div class="pill">Сфера: Образование, семейные технологии</div>
+            <h4>Ключевой эффект</h4>
+            <ul>
+              <li>Индивидуальная адаптация учебного плана</li>
+              <li>Повышение мотивации и вовлечённости</li>
+              <li>Сокращение времени учителя на подготовку</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section id="team" class="card">
+        <h2>2. Команда</h2>
+        <div class="team-member">
+          <div class="avatar">RA</div>
+          <div>
+            <div style="font-weight:700">Диёрбек Мансуров</div>
+            <div style="color:var(--muted);font-size:14px">Роль: тимлид / product manager</div>
+            <div style="margin-top:6px;color:var(--muted)">Навыки: управление проектом, продуктовый дизайн, коммуникация. </div>
+
+	    <div style="font-weight:700">Сарвар Базаров</div>
+            <div style="color:var(--muted);font-size:14px">Роль: ML engineer </div>
+            <div style="margin-top:6px;color:var(--muted)">Навыки: проекты, связанные с решением проблем при помощи инструментов машинного обучения . </div>
+
+	    <div style="font-weight:700">Аббосхон Бокихонов</div>
+            <div style="color:var(--muted);font-size:14px">Роль: backend developer </div>
+            <div style="margin-top:6px;color:var(--muted)">Навыки: работа с сервером и API, базой данных, анализ данных </div>
+
+	    <div style="font-weight:700">Ален Каримов</div>
+            <div style="color:var(--muted);font-size:14px">Роль: idea generator /</div>
+            <div style="margin-top:6px;color:var(--muted)">Навыки: генерация идей, ML проекты </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="why" class="card">
+        <h2>3. Почему именно наша команда</h2>
+        <p>Мы объединяем практический опыт в разработке образовательных приложений, экспертизу в машинном обучении и опыт работы с продуктами для детей. Наш сильный путь — быстрые итерации, дружная коммуникация и приоритезация приватности и безопасности данных детей.</p>
+        <ul>
+          <li>Опыт реализации прототипов и MVP за 1–2 недели</li>
+          <li>Знание технологий ИИ для адаптивного обучения</li>
+          <li>Понимание возрастных особенностей и педагогики</li>
+	  <li>Консультация как с молодыми, так и с опытными педагогами для создания объективности, учитывающий как опыт, так и современной видение</li>
+        </ul>
+      </section>
+
+      <section id="roadmap" class="card">
+        <h2>4. Дорожная карта и текущий этап</h2>
+        <div class="grid two">
+          <div>
+            <div class="roadmap">
+              <div class="step"><strong>Идея</strong> — исследование рынка и гипотез (завершено)</div>
+              <div class="step"><strong>Прототип</strong> — интерактивный игровой уровень + простой backend (текущий этап)</div>
+              <div class="step"><strong>MVP</strong> — 5 уровней, профиль ребёнка, базовый ИИ для адаптации (1–2 месяца)</div>
+              <div class="step"><strong>Запуск</strong> — бета для 100 семей, сбор метрик (1-2 месяца)</div>
+            </div>
+          </div>
+          <aside>
+            <h4>Текущий этап</h4>
+            <p class="pill">Прототип</p>
+            <h4 style="margin-top:12px">Следующие шаги</h4>
+            <ol>
+              <li>Сбор тестовой группы и сбор фидбека</li>
+              <li>Интеграция простого адаптивного движка на базе правил + ML</li>
+              <li>Подготовка к MVP и тестирование с родителями</li>
+            </ol>
+          </aside>
+        </div>
+      </section>
+
+      <section id="tech" class="card">
+        <h2>5. Как планируем реализовать решение</h2>
+        <h4>Ключевые шаги</h4>
+        <ol>
+          <li>Дизайн игрового цикла и механик</li>
+          <li>Разработка фронтенда (React / Vue / простой HTML для прототипа)</li>
+          <li>Создание backend: хранение профилей, метрик, рекомендаций</li>
+          <li>Внедрение ИИ: модели ранжирования задач и адаптивной подборки (онлайн fine-tuning необязательно на старте)</li>
+          <li>Тестирование, безопасность и соответствие нормам для детей</li>
+        </ol>
+
+        <h4>Технологии</h4>
+        <ul>
+          <li>Frontend: React или чистый HTML/CSS для демо-версии</li>
+          <li>Backend: Node.js / Flask / python</li>
+          <li>База: PostgreSQL / SQLite для прототипа</li>
+          <li>ИИ: PyTorch / TensorFlow (модели для адаптации), embeddings + простая классификация</li>
+          <li>Хостинг: Vercel / GitHub Pages (демо) + Railway/Render для backend</li>
+        </ul>
+
+        <h4>Как используем ИИ</h4>
+        <p>ИИ подбирает сложность задач по реальному времени (точность ответов, скорость), формирует рекомендации родителям и предсказывает зоны, требующие повторения. На этапе MVP мы используем простую модель классификации и правило-бейзлайн, чтобы обеспечить прозрачность.</p>
+      </section>
+    </main>
+  </script>
+</body>
+</html>
